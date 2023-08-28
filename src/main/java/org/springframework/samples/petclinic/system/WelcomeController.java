@@ -26,5 +26,9 @@ class WelcomeController {
 	public String welcome() {
 		return "welcome";
 	}
+	@GetMapping("/cicd")
+	public String welcome() {
+		return "<h1> CI CD Pipelines Setup is DONE ";
+	}
 
 }
