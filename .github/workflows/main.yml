@@ -21,8 +21,8 @@ jobs:
             distribution: 'temurin'
             cache: maven
 
-      - name: Skip TEST Maven
-        run: mvn install -Dmaven.test.skip=true
+      # - name: Skip TEST Maven
+      #   run: mvn install -Dmaven.test.skip=true
 
       - name: Build with Maven
         run: mvn -B package --file pom.xml
